@@ -17,8 +17,19 @@ exports.template = function(grunt, init, done) {
     init.prompt('name'),
     init.prompt('version'),
     init.prompt('description'),
-    init.prompt('authorName'),
-    init.prompt('authorEmail'),
+    {
+        name: 'pageTitle',
+        message: 'What should go in the title tag?',
+        default: 'My Project',
+    },
+    {
+        name: 'authorName',
+        message: 'What is your name?'
+    },
+    {
+        name: 'authorEmail',
+        message: 'What is your email address?'
+    },
   ], function(err, props) {
 
     // Files to copy (and process).
