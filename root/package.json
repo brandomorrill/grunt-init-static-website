@@ -1,6 +1,6 @@
 {
   "name": "{%= name %}",
-  "version": "{%= name %}",
+  "version": "{%= version %}",
   "description": "{%= description %}",
   "main": "Gruntfile.js",
   "author": "{%= authorName %}",
